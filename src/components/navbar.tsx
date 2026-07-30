@@ -6,7 +6,6 @@ import { ThemeToggle } from "./theme-toggle";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -50,49 +49,24 @@ export function Navbar() {
           Télécharger
         </a>
 
-        {/* Legal dropdown */}
-        <div className="relative">
-          <button
-            onClick={() => setMenuOpen(!menuOpen)}
-            onBlur={() => setTimeout(() => setMenuOpen(false), 150)}
-            className="inline-flex h-8 items-center gap-1 rounded-lg px-3 text-[.82rem] font-medium text-muted transition-colors hover:bg-surface hover:text-fg"
-            aria-haspopup="menu"
-            aria-expanded={menuOpen}
-          >
-            Légal
-            <svg
-              viewBox="0 0 16 16"
-              fill="currentColor"
-              className={`h-3 w-3 transition-transform ${menuOpen ? "rotate-180" : ""}`}
-              aria-hidden="true"
-            >
-              <path d="M4.427 5.427l3.396 3.396a.25.25 0 00.354 0l3.396-3.396A.25.25 0 0011.396 5H4.604a.25.25 0 00-.177.427z" />
-            </svg>
-          </button>
-          {menuOpen && (
-            <div
-              role="menu"
-              className="absolute right-0 top-full mt-1 w-44 rounded-xl border border-border bg-surface py-1 shadow-md"
-            >
-              <Link
-                href="/privacy"
-                role="menuitem"
-                className="block px-4 py-2 text-[.82rem] text-fg transition-colors hover:bg-surface-hover"
-                onClick={() => setMenuOpen(false)}
-              >
-                Confidentialité
-              </Link>
-              <Link
-                href="/eula"
-                role="menuitem"
-                className="block px-4 py-2 text-[.82rem] text-fg transition-colors hover:bg-surface-hover"
-                onClick={() => setMenuOpen(false)}
-              >
-                Conditions
-              </Link>
-            </div>
-          )}
-        </div>
+        <Link
+          href="/privacy"
+          className="hidden h-8 items-center rounded-lg px-3 text-[.82rem] font-medium text-muted transition-colors hover:bg-surface hover:text-fg sm:inline-flex"
+        >
+          Confidentialité
+        </Link>
+        <Link
+          href="/eula"
+          className="hidden h-8 items-center rounded-lg px-3 text-[.82rem] font-medium text-muted transition-colors hover:bg-surface hover:text-fg sm:inline-flex"
+        >
+          Conditions
+        </Link>
+        <a
+          href="mailto:privacy@btcbenin.com"
+          className="hidden h-8 items-center rounded-lg px-3 text-[.82rem] font-medium text-muted transition-colors hover:bg-surface hover:text-fg sm:inline-flex"
+        >
+          Contact
+        </a>
 
         <ThemeToggle />
       </div>
