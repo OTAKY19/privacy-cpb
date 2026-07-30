@@ -11,7 +11,7 @@ export function Hero() {
         }}
       />
 
-      <div className="relative z-10 mx-auto max-w-[860px] px-5">
+      <div className="relative z-10 mx-auto max-w-[960px] px-5">
         <div className="grid items-center gap-8 md:grid-cols-[1fr_2fr] md:gap-10">
           {/* Colonne démo */}
           <figure

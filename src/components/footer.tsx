@@ -26,6 +26,9 @@ export function Footer() {
           <Link href="/privacy" className="transition-colors hover:text-fg">
             Confidentialité
           </Link>
+          <Link href="/eula" className="transition-colors hover:text-fg">
+            Conditions
+          </Link>
           <a
             href="mailto:privacy@btcbenin.com"
             className="transition-colors hover:text-fg"

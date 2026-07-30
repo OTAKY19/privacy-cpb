@@ -15,10 +15,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Code Permis Bénin — Réussis ton code du premier coup",
-  description: "Prépare-toi à l'examen du code de la route. Quiz, examens blancs, suivi de progression.",
+  description: "Prépare-toi à l'examen du code de la route au Bénin. Quiz, examens blancs, suivi de progression pour le permis de conduire.",
   openGraph: {
     title: "Code Permis Bénin",
     description: "Réussis ton code du premier coup.",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
   },
 };
 

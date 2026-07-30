@@ -55,19 +55,18 @@ export function Navbar() {
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             onBlur={() => setTimeout(() => setMenuOpen(false), 150)}
-            className="hidden h-8 items-center rounded-lg px-3 text-[.82rem] font-medium text-muted transition-colors hover:bg-surface hover:text-fg sm:inline-flex"
+            className="inline-flex h-8 items-center gap-1 rounded-lg px-3 text-[.82rem] font-medium text-muted transition-colors hover:bg-surface hover:text-fg"
             aria-haspopup="menu"
             aria-expanded={menuOpen}
           >
+            Légal
             <svg
-              viewBox="0 0 24 24"
+              viewBox="0 0 16 16"
               fill="currentColor"
-              className="h-3.5 w-3.5"
+              className={`h-3 w-3 transition-transform ${menuOpen ? "rotate-180" : ""}`}
               aria-hidden="true"
             >
-              <circle cx="5" cy="12" r="1.8" />
-              <circle cx="12" cy="12" r="1.8" />
-              <circle cx="19" cy="12" r="1.8" />
+              <path d="M4.427 5.427l3.396 3.396a.25.25 0 00.354 0l3.396-3.396A.25.25 0 0011.396 5H4.604a.25.25 0 00-.177.427z" />
             </svg>
           </button>
           {menuOpen && (
