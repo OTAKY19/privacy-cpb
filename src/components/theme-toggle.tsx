@@ -27,7 +27,7 @@ export function ThemeToggle() {
     <button
       onClick={toggle}
       aria-label="Basculer le thème"
-      className="flex h-8 w-8 items-center justify-center rounded-lg text-muted transition-colors hover:bg-surface hover:text-fg"
+      className="flex size-[34px] items-center justify-center rounded-full border border-border text-muted transition-colors hover:bg-surface hover:text-fg"
     >
       {dark ? (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-4 w-4">

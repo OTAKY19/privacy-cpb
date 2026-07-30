@@ -35,6 +35,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
+        <meta name="color-scheme" content="light dark" />
         <ThemeScript />
       </head>
       <body className="min-h-full flex flex-col">{children}</body>
