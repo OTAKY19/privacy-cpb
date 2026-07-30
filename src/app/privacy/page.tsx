@@ -162,7 +162,7 @@ export default function PrivacyPage() {
           Corriger des données inexactes ou obtenir l&apos;effacement de données
           traitées de façon illicite.
         </Right>
-        <Right title="Droit à l&apos;oubli (Art. 443)">
+          <Right title="Droit à l'oubli (Art. 443)">
           Demander l&apos;effacement de vos données après la durée de
           conservation légale.
         </Right>
@@ -171,8 +171,8 @@ export default function PrivacyPage() {
           Pour exercer ces droits, adressez votre demande à{" "}
           <a href="mailto:privacy@btcbenin.com">privacy@btcbenin.com</a>,
           accompagnée d&apos;une copie de votre pièce d&apos;identité. BTC
-          s&apos;engage à répondre dans un délai de 30 jours conformément
-          à&apos;l&apos;article 437 du Code du numérique.
+          s'engage à répondre dans un délai de 30 jours conformément
+          à l'article 437 du Code du numérique.
         </p>
 
         <div className="callout">
