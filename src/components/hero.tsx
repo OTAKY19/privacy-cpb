@@ -27,18 +27,13 @@ export function Hero() {
                   "0 28px 48px rgba(0,0,0,0.18), 0 0 0 1px rgba(255,255,255,0.06) inset",
               }}
             >
-              <video
-                src="/demo.mp4"
-                poster="/black-demo.png"
+              <img
+                src="/og-image.png"
+                alt="Aperçu de l'application Code Permis Bénin"
                 width={540}
                 height={1100}
-                autoPlay
-                muted
-                loop
-                playsInline
-                preload="metadata"
                 className="h-full w-full object-cover"
-                aria-hidden="true"
+                loading="eager"
               />
             </div>
           </figure>
