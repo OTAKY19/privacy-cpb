@@ -22,7 +22,7 @@ export function Hero() {
             <div
               className="relative aspect-[540/1100] rounded-[2.8rem] bg-[#1a1a1a] p-[8px] shadow-[0_28px_48px_rgba(0,0,0,0.25),0_0_0_1px_rgba(255,255,255,0.06)_inset]"
               style={{
-                animation: "demoFloat 8s ease-in-out infinite",
+                animation: "demoFloat 10s var(--ease-ios) infinite",
               }}
             >
               {/* Dynamic Island */}
