@@ -20,21 +20,32 @@ export function Hero() {
             aria-label="Aperçu de l'application sur iPhone"
           >
             <div
-              className="aspect-[540/1100] overflow-hidden rounded-[2rem] border-[3px] border-border bg-surface"
+              className="relative aspect-[540/1100] overflow-hidden rounded-[2.8rem] bg-[#1a1a1a] p-[8px] shadow-[0_28px_48px_rgba(0,0,0,0.25),0_0_0_1px_rgba(255,255,255,0.06)_inset]"
               style={{
                 animation: "demoFloat 8s ease-in-out infinite",
-                boxShadow:
-                  "0 28px 48px rgba(0,0,0,0.18), 0 0 0 1px rgba(255,255,255,0.06) inset",
               }}
             >
-              <img
-                src="/screenshot-app.jpg"
-                alt="Aperçu de l'application Code Permis Bénin"
-                width={540}
-                height={1100}
-                className="h-full w-full object-cover"
-                loading="eager"
-              />
+              {/* Dynamic Island */}
+              <div className="absolute left-1/2 top-[18px] z-30 flex -translate-x-1/2 items-center gap-2">
+                <div className="h-[26px] w-[90px] rounded-full bg-black" />
+              </div>
+
+              {/* Screenshot */}
+              <div className="relative h-full w-full overflow-[round] rounded-[2rem]">
+                <img
+                  src="/screenshot-app.jpg"
+                  alt="Aperçu de l'application Code Permis Bénin"
+                  width={540}
+                  height={1100}
+                  className="h-full w-full object-cover"
+                  loading="eager"
+                />
+              </div>
+
+              {/* Home Indicator */}
+              <div className="absolute bottom-[10px] left-1/2 z-30 -translate-x-1/2">
+                <div className="h-[5px] w-[120px] rounded-full bg-white/40" />
+              </div>
             </div>
           </figure>
 
