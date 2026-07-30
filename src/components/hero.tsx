@@ -28,7 +28,7 @@ export function Hero() {
               }}
             >
               <img
-                src="/og-image.png"
+                src="/screenshot-app.jpg"
                 alt="Aperçu de l'application Code Permis Bénin"
                 width={540}
                 height={1100}
