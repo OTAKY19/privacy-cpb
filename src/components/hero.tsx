@@ -31,7 +31,7 @@ export function Hero() {
               </div>
 
               {/* Screenshot — padded top to avoid dynamic island overlap */}
-              <div className="relative h-full w-full overflow-hidden rounded-[2rem] bg-[#ECEFF4] pt-[32px]">
+              <div className="relative h-full w-full overflow-hidden rounded-[2rem] bg-[#ECEFF4] pt-[32px]" style={{ transform: "translateZ(0)" }}>
                 <img
                   src="/screenshot-app.jpg"
                   alt="Aperçu de l'application Code Permis Bénin"
