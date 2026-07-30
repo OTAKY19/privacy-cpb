@@ -30,8 +30,8 @@ export function Hero() {
                 <div className="h-[26px] w-[90px] rounded-full bg-black" />
               </div>
 
-              {/* Screenshot — padded top to avoid dynamic island overlap */}
-              <div className="relative h-full w-full overflow-hidden rounded-[2rem] bg-[#ECEFF4] pt-[32px]">
+              {/* Screenshot */}
+              <div className="relative h-full w-full overflow-hidden rounded-[2rem]">
                 <img
                   src="/screenshot-app.jpg"
                   alt="Aperçu de l'application Code Permis Bénin"
