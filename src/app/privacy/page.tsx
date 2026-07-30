@@ -10,7 +10,7 @@ export default function PrivacyPage() {
   return (
     <>
       <Navbar />
-      <div className="legal-page pt-[56px]">
+      <div className="legal-page">
       <div className="legal-inner">
         <header style={{ marginBottom: 40 }}>
           <div className="legal-eyebrow">
