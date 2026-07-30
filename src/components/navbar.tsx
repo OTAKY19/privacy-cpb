@@ -6,6 +6,7 @@ import { ThemeToggle } from "./theme-toggle";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -48,6 +49,52 @@ export function Navbar() {
         >
           Télécharger
         </a>
+
+        {/* Legal dropdown */}
+        <div className="relative">
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            onBlur={() => setTimeout(() => setMenuOpen(false), 150)}
+            className="hidden h-8 items-center rounded-lg px-3 text-[.82rem] font-medium text-muted transition-colors hover:bg-surface hover:text-fg sm:inline-flex"
+            aria-haspopup="menu"
+            aria-expanded={menuOpen}
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="h-3.5 w-3.5"
+              aria-hidden="true"
+            >
+              <circle cx="5" cy="12" r="1.8" />
+              <circle cx="12" cy="12" r="1.8" />
+              <circle cx="19" cy="12" r="1.8" />
+            </svg>
+          </button>
+          {menuOpen && (
+            <div
+              role="menu"
+              className="absolute right-0 top-full mt-1 w-44 rounded-xl border border-border bg-surface py-1 shadow-md"
+            >
+              <Link
+                href="/privacy"
+                role="menuitem"
+                className="block px-4 py-2 text-[.82rem] text-fg transition-colors hover:bg-surface-hover"
+                onClick={() => setMenuOpen(false)}
+              >
+                Confidentialité
+              </Link>
+              <Link
+                href="/eula"
+                role="menuitem"
+                className="block px-4 py-2 text-[.82rem] text-fg transition-colors hover:bg-surface-hover"
+                onClick={() => setMenuOpen(false)}
+              >
+                Conditions
+              </Link>
+            </div>
+          )}
+        </div>
+
         <ThemeToggle />
       </div>
     </nav>
