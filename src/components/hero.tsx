@@ -20,7 +20,7 @@ export function Hero() {
             aria-label="Aperçu de l'application sur iPhone"
           >
             <div
-              className="relative aspect-[540/1100] overflow-hidden rounded-[2.8rem] bg-[#1a1a1a] p-[8px] shadow-[0_28px_48px_rgba(0,0,0,0.25),0_0_0_1px_rgba(255,255,255,0.06)_inset]"
+              className="relative aspect-[540/1100] rounded-[2.8rem] bg-[#1a1a1a] p-[8px] shadow-[0_28px_48px_rgba(0,0,0,0.25),0_0_0_1px_rgba(255,255,255,0.06)_inset]"
               style={{
                 animation: "demoFloat 8s ease-in-out infinite",
               }}
@@ -30,14 +30,14 @@ export function Hero() {
                 <div className="h-[26px] w-[90px] rounded-full bg-black" />
               </div>
 
-              {/* Screenshot */}
-              <div className="relative h-full w-full overflow-[round] rounded-[2rem]">
+              {/* Screenshot — padded top to avoid dynamic island overlap */}
+              <div className="relative h-full w-full overflow-hidden rounded-[2rem] bg-[#f5f5f5] pt-[32px]">
                 <img
                   src="/screenshot-app.jpg"
                   alt="Aperçu de l'application Code Permis Bénin"
                   width={540}
                   height={1100}
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-cover object-top"
                   loading="eager"
                 />
               </div>
