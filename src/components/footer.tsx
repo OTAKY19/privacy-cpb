@@ -18,7 +18,7 @@ export function Footer() {
             ♥
           </span>
           <span className="sr-only">Amour</span>
-          © 2026 Code Permis Bénin — Tous droits réservés
+          © 2026 BÉNIN TECHNOLOGIE CONSULTING — Tous droits réservés
         </p>
       </div>
     </footer>
