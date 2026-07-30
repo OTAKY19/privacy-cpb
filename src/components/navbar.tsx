@@ -29,8 +29,8 @@ export function Navbar() {
           height={28}
           className="h-7 w-7 rounded-[0.4rem]"
         />
-        <span className="text-[.82rem] font-semibold tracking-[-.01em] text-fg">
-          Code Permis Bénin
+        <span className="text-[.88rem] font-extrabold tracking-[0.02em] text-fg">
+          CODE PERMIS <span className="text-[#7BAF8E]">BÉNIN</span>
         </span>
       </Link>
 
