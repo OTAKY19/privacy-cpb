@@ -6,16 +6,16 @@ export const metadata: Metadata = {
 
 export default function PrivacyPage() {
   return (
-    <div className="min-h-screen bg-[#f8f9fa] py-8 px-6">
-      <div className="mx-auto max-w-2xl rounded-2xl bg-white p-8 shadow-sm">
+    <div className="min-h-screen bg-bg py-8 px-6">
+      <div className="mx-auto max-w-2xl rounded-2xl border border-border bg-bg p-8">
         <a
           href="/"
-          className="mb-6 inline-flex items-center gap-1 text-sm text-primary hover:underline"
+          className="mb-6 inline-flex items-center gap-1 text-sm text-muted hover:text-fg"
         >
           ← Retour à l&apos;accueil
         </a>
 
-        <h1 className="text-2xl font-bold text-primary">Politique de confidentialité</h1>
+        <h1 className="text-2xl font-bold text-fg">Politique de confidentialité</h1>
         <p className="mt-1 border-b border-border pb-4 text-sm text-muted">
           Code Permis Bénin — Dernière mise à jour : juillet 2026
         </p>
@@ -171,7 +171,7 @@ export default function PrivacyPage() {
           </ul>
         </Section>
 
-        <div className="mt-8 rounded-xl bg-green-50 p-6">
+        <div className="mt-8 rounded-xl bg-surface p-6">
           <h3 className="text-base font-semibold">
             Notre délégué à la protection des données (DPO) est à votre disposition pour toute
             précision.
@@ -188,7 +188,7 @@ export default function PrivacyPage() {
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <section>
-      <h2 className="mb-3 mt-6 text-lg font-semibold text-primary">{title}</h2>
+      <h2 className="mb-3 mt-6 text-lg font-semibold text-fg">{title}</h2>
       <div className="text-sm leading-relaxed">{children}</div>
     </section>
   );
@@ -196,7 +196,7 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 
 function Right({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <div className="rounded-lg bg-gray-50 p-3">
+    <div className="rounded-lg bg-surface p-3">
       <p className="font-semibold">{title}</p>
       <p className="mt-1 text-sm">{children}</p>
     </div>
