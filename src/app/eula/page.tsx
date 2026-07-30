@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Navbar } from "@/components/navbar";
 
 export const metadata: Metadata = {
   title: "Conditions d'utilisation — Code Permis Bénin",
@@ -7,7 +8,9 @@ export const metadata: Metadata = {
 
 export default function EulaPage() {
   return (
-    <div className="legal-page">
+    <>
+      <Navbar />
+      <div className="legal-page pt-[56px]">
       <div className="legal-inner">
         <header style={{ marginBottom: 40 }}>
           <div className="legal-eyebrow">
@@ -216,6 +219,6 @@ export default function EulaPage() {
           </Link>
         </div>
       </div>
-    </div>
+    </>
   );
 }
