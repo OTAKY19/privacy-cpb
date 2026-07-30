@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Code Permis Bénin",
     description: "Réussis ton code du premier coup.",
-    images: [{ url: "https://privacy-cpb.vercel.app/og-image.png", width: 1200, height: 630 }],
+    images: [{ url: "https://codepermisbenin.vercel.app/og-image.png", width: 1200, height: 630 }],
   },
 };
 
